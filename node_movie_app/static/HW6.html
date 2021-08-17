@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN” "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" href="/static/HW6.css">
+    <script src="/static/HW6.js"></script>
+  </head>
+  <body>
+    <h1>THE MOVIE DB</h1>
+    <div id="navbar">
+      <button class="navbutton" id="HomeButton" onclick="switchContent('Home', 'HomeButton')">Home &xrarr;</button>
+      <button class="navbutton" id="SearchButton" onclick="switchContent('Search', 'SearchButton')">Search &xrarr;</button>
+    </div>
+    <div id="Home" class="content">
+      <p class="title">Trending Movies</p>
+      <div class="showmovie" id="movietrending">
+        <img id="trendingimg" class="fade" src="https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW6/imgs/movie-placeholder.jpg">
+        <p id="trendingtext">PlaceHolder</p>
+      </div>
+      <p class="title">TV Shows On-Air Today</p>
+      <div class="showmovie" id="tvairing">
+        <img id="airingimg" class="fade" src="https://bytes.usc.edu/cs571/s21_JSwasm00/hw/HW6/imgs/movie-placeholder.jpg">
+        <p id="airingtext">PlaceHolder</p>
+      </div>
+    </div>
+    <div id="Search" class="content">
+      <p>Search</p>
+      <form method="GET" onsubmit="return false">
+        <div class="inputblock">
+          <label class="star">Keyword<span style="color: red">*</span></label>
+          <input type="text" id = "keyword" name="keyword" style="width: 600px">
+        </div>
+        <div class="inputblock">
+          <label class="star">Category<span style="color: red">*</span></label>
+          <select id="category" name="catrgory">
+            <option value=""></option>
+            <option value="Movies">Movies</option>
+            <option value="TVShows">TV Shows</option>
+            <option value="All">Movies and TV Shows</option>
+          </select>
+        </div>
+        <div class="searchbutton">
+          <input id="button1" type="submit" onclick="search()" value="Search">
+          <input id="button2" type="reset" onclick="clear()" value="Clear">
+        </div>
+      </form>
+    </div>
+    <div id="SearchResults">
+      <p style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Showing Results...</p>
+    </div>
+    <div id="modal">
+    </div>
+    <div id="endtitle">
+      <p style="color: rgb(148, 5, 5)"> ____________</p>
+      <p>Designed and developed by Hao Liu</p>
+      <p>Powered by TMDB</p>
+    </div>
+  </body>
+</html>

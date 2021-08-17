@@ -1,0 +1,477 @@
+@import "compass/css3";
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+html {
+  max-height: 100%;
+  overflow: auto;
+}
+
+body {
+  background-color: black;
+  height: auto;
+  max-height: 100%;
+  overflow: auto;
+}
+
+h1 {
+  color: rgb(148, 5, 5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, black 0%, black 80%, black 80%, rgb(148, 5, 5) 100%);
+}
+
+#endtitle {
+  background: linear-gradient(to right, black 0%, black 80%, black 80%, rgb(148, 5, 5) 100%);
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+#endtitle p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: right;
+  font-style: italic;
+  margin: 0px;
+  font-size: 10px;
+  color: white;
+}
+
+#navbar {
+  margin-left: 200px;
+  margin-right: 20px;
+  width: 200px;
+  /*height: 1000px;*/
+  height: 100%;
+  border-right: solid white 1px;
+  float: left;
+  overflow: visible;
+}
+
+.navbutton {
+  color: white;
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  outline: none;
+  border: 0;
+  font-size: 20;
+}
+
+.navbutton:active {
+  border-style: none;
+}
+
+.content {
+  float: left;
+  background-color: black;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.showmovie {
+  position: relative;
+}
+.showmovie img{
+  width: 780px;
+  height: 439px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.showmovie p {
+  position: absolute;
+  top: 340px;
+  left: 110px;
+  width: 780px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(109, 107, 107, 0.5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  
+}
+
+#Search {
+  display: none;
+  background: linear-gradient(to bottom, rgb(148, 5, 5) 0%, black 100%);
+}
+#Search p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#HomeButton {
+  color: red;
+  border-bottom: solid white 1px;
+}
+
+.title {
+  color: white;
+  font-size: 25;
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.star{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputblock {
+  display: block;
+  width: 800px;
+  margin: 30px auto;
+}
+
+.searchbutton input{
+  background-color: rgb(5, 2, 2);
+  color: white;
+  width: 100px;
+  height: 35px;
+  border-style: none;
+}
+
+
+#button1 {
+  margin-left: 350px;
+}
+
+#button2 {
+  margin-right: 350px;
+}
+
+#SearchResults {
+  display: none;
+  width: 1000px;
+  float:left;
+}
+
+
+.reslist {
+  width: 1000px;
+  height: 320px;
+}
+
+.reslist img {
+  margin-top: 10px;
+  float: left;
+  width: 180px;
+  height: 280px;
+  margin-right: 30px;
+}
+
+.redbar {
+  float: left;
+  background-color:rgb(148, 5, 5);
+  width: 10px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.listtitle {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  margin-top: 15px;
+  width: 750px;
+  height: 60px;
+  font-weight: bold;
+  float: left;
+}
+
+.listgenre {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  height: 20px;
+  width: 750px;
+  float: left;
+  margin: 0px;
+}
+
+.listvote {
+  width: 750px;
+  height: 20px;
+  float: left;
+  margin: 0px;
+}
+
+.listview {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  width: 750px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  float: left;
+}
+
+.listbutton {
+  background-color: rgb(148, 5, 5);
+  color: white;
+  outline: none;
+  border-style: none;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  display: block;
+}
+
+.listbutton:hover {
+  background-color: gray;
+}
+
+#modal {
+  position: fixed;
+  z-index: 1;
+  margin-left: 500px;
+  width: 850px;
+  height: 800px;
+  background-color: gray;
+  overflow-y:scroll;
+  max-height: 100%;
+  display: none;
+}
+
+.backdrop {
+  margin-top: 15px;
+  margin-left:30px;
+  width: 780px;
+}
+
+.close {
+  color: rgb(75, 72, 72);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 5px;
+  position: fixed;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modaltitle {
+  margin-left: 30px;
+  width: 780px;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.moreinfo {
+  color:red; 
+  font-size: 20px;
+}
+
+.moreinfo:hover {
+  cursor: pointer;
+}
+
+.modalgenre {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  height: 20px;
+  width: 780px;
+  float: left;
+  padding-left: 30px;
+  margin: 0px;
+}
+
+.modalvote {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 780px;
+  height: 20px;
+  float: left;
+  margin: 30px;
+}
+
+.modalview {
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  width: 780px;
+  float: left;
+  margin: 30px;
+}
+
+.modallanguage {
+  font-style: italic;
+  width: 780px;
+  float: left;
+  margin: 30px;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+.modalcasttitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  width: 780px;
+  margin: 30px;
+  float: left;
+}
+
+#modalcast {
+  display: grid;
+  margin-left: 30px;
+  width: 800px;
+  height: 700px;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  float: left;
+}
+
+.castitem img{
+  margin: 5px;
+  width: 180px;
+  height: 270px;
+}
+
+.castname {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  margin: 0px;
+}
+
+.castAS {
+  color: black;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0px;
+}
+
+.castwho {
+  color: black;
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  margin: 0px;
+}
+
+.emptymodal {
+  margin-left: 30px;
+  width: 800px;
+  height: 100px;
+  background-color: gray;
+}
+
+#review {
+  display: grid;
+  margin-left: 30px;
+  width: 800px;
+  height: 800px;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(5, 20%);
+  float: left;
+}
+
+#reviewtitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  width: 780px;
+  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.reviewname {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-size: 15px;
+  width: 780px;
+  margin: 10px;
+  float: left;
+}
+
+.reviewcontent {
+  float: left;
+  width: 780px;
+  height: 100px;
+}
+
+.reviewcontent p{
+  color: black;
+  font-size: 15px;
+  margin: 10px;
+  margin-bottom: 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.reviewline {
+  border-top:solid rgb(102, 99, 99) 1px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 20px;
+  width: 600px;
+  float: left;
+}
+
+.ratingvote {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 780px;
+  height: 15px;
+  margin: 0px;
+  float: left;
+}
+
+.fade {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
+}
